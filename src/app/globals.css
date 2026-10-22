@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens.
+ *
+ * Neutrals are the US Web Design System (USWDS) cool grays, the federal design
+ * system the USPTO belongs to, which also supplies the two typefaces (Public
+ * Sans, Merriweather) and the focus color.
+ *
+ * Match strength is an ordered scale, so it uses one hue light-to-dark: steps
+ * 250 and 550 of a validated blue ramp (300 and 600 in dark mode, where the
+ * order flips). Text on every fill clears 4.5:1, and each fill clears 2:1
+ * against the page.
+ */
+:root {
+  --bg: #ffffff;
+  --surface: #f0f0f0;
+  --ink: #1b1b1b;
+  --muted: #565c65;
+  --faint: #71767a;
+  --rule: #dfe1e2;
+  --rule-strong: #a9aeb1;
+  --strong: #1c5cab;
+  --on-strong: #ffffff;
+  --partial: #86b6ef;
+  --on-partial: #1b1b1b;
+  --mark: #fff1a8;
+  --focus: #2491ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161718;
+    --surface: #1f2124;
+    --ink: #f0f0f0;
+    --muted: #a9aeb1;
+    --faint: #8d9297;
+    --rule: #2e3134;
+    --rule-strong: #565c65;
+    --strong: #6da7ec;
+    --on-strong: #161718;
+    --partial: #184f95;
+    --on-partial: #f0f0f0;
+    --mark: #5c4b0a;
+    --focus: #59b9ff;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-strong: var(--strong);
+  --color-on-strong: var(--on-strong);
+  --color-partial: var(--partial);
+  --color-on-partial: var(--on-partial);
+  --color-mark: var(--mark);
+  --color-focus: var(--focus);
+
+  --font-sans: var(--font-public-sans), system-ui, sans-serif;
+  --font-serif: var(--font-merriweather), Georgia, serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

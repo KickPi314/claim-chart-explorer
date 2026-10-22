@@ -1,0 +1,158 @@
+{
+  "patent": {
+    "id": "US5960411A",
+    "number": "US 5,960,411",
+    "title": "Method and system for placing a purchase order via a communications network",
+    "assignee": "Amazon.com, Inc.",
+    "filed": "1997-09-12",
+    "granted": "1999-09-28",
+    "url": "https://patents.google.com/patent/US5960411A/en",
+    "claimNumber": 1,
+    "preamble": "A method of placing an order for an item comprising:",
+    "claimText": "A method of placing an order for an item comprising: under control of a client system, displaying information identifying the item; and in response to only a single action being performed, sending a request to order the item along with an identifier of a purchaser of the item to a server system; under control of a single-action ordering component of the server system, receiving the request; retrieving additional information previously stored for the purchaser identified by the identifier in the received request; and generating an order to purchase the requested item for the purchaser identified by the identifier in the received request using the retrieved additional information; and fulfilling the generated order to complete purchase of the item whereby the item is ordered without using a shopping cart ordering model."
+  },
+  "elements": [
+    {
+      "id": "1a",
+      "label": "Display item information",
+      "text": "under control of a client system, displaying information identifying the item;"
+    },
+    {
+      "id": "1b",
+      "label": "Single-action request with purchaser ID",
+      "text": "in response to only a single action being performed, sending a request to order the item along with an identifier of a purchaser of the item to a server system;"
+    },
+    {
+      "id": "1c",
+      "label": "Server receives the request",
+      "text": "under control of a single-action ordering component of the server system, receiving the request;"
+    },
+    {
+      "id": "1d",
+      "label": "Retrieve stored purchaser info",
+      "text": "retrieving additional information previously stored for the purchaser identified by the identifier in the received request;"
+    },
+    {
+      "id": "1e",
+      "label": "Generate the order",
+      "text": "generating an order to purchase the requested item for the purchaser identified by the identifier in the received request using the retrieved additional information;"
+    },
+    {
+      "id": "1f",
+      "label": "Fulfill the order",
+      "text": "fulfilling the generated order to complete purchase of the item"
+    },
+    {
+      "id": "1g",
+      "label": "No shopping cart",
+      "text": "whereby the item is ordered without using a shopping cart ordering model."
+    }
+  ],
+  "priorArt": [
+    {
+      "id": "US4734858A",
+      "number": "US 4,734,858",
+      "title": "Data terminal and system for placing orders",
+      "assignee": "Portel Services Network, Inc.",
+      "filed": "1984-11-26",
+      "granted": "1988-03-29",
+      "url": "https://patents.google.com/patent/US4734858A/en",
+      "passages": [
+        {
+          "id": "US4734858A-p1",
+          "text": "With a data terminal in accordance with the invention, product codes and stock numbers as presently employed in a wide variety of existing catalogs can be used in the ordering of merchandise. For example, as described herein for one embodiment, merchandise can be ordered with a data terminal from a supplier catalog using a particular code for that supplier catalog, page number, product identification numbers together with quantity and product option codes in the order and manner as these appear on the catalog page. Since the file at the local processing center includes in its computer memory the name, address and other related transaction data for this individual consumer, only limited order data is required from the user terminal when an order is placed. yet sufficient data is employed so that the order can be fulfilled."
+        },
+        {
+          "id": "US4734858A-p2",
+          "text": "A particular advantage of one data terminal in accordance with the invention is the use of a special keyboard in which a group of keys carry both single digit numerals in sequence and alphabet characters which are distributed in a preferred manner. The alphabet characters are so placed that a group of first letters of the alphabet are placed in corresponding sequence on each of the keys in the group. The subsequent letters of the alphabet are generally uniformly distributed in numerical and alphabetic sequence on the group of keys. In this manner many common usages of letter codes for designation of merchandise or services can be accommodated with a single key actuation with ambiguity."
+        },
+        {
+          "id": "US4734858A-p3",
+          "text": "A local processor center 14 further is provided with appropriate computer accessible records 34 and 36 to store information related to each of the data terminals 12 in the group 20 and assigned to automatically dial the center 14. Thus, the names of the subscribers or users of the terminals 12, their addresses, credit authorization and the like are stored at 34 for rapid access by the computer in center 14."
+        },
+        {
+          "id": "US4734858A-p4",
+          "text": "A regional processing center 16 is coupled to a number of local centers 14 along lines 22 and handles orders for common suppliers 50 by transmitting orders, either directly to the suppliers by way of a telex or the like, or into a computer 52 installed at the regional processing center 16 or at a supplier's facility. Orders are then fulfilled by the supplier by a shipment from a warehouse at 54. The order data supplied by a local center to the regional center 16 is generated by the local center from order data supplied by a data terminal 12 and data stored in the local center 14 on the user of the terminal 12."
+        },
+        {
+          "id": "US4734858A-p5",
+          "text": "Initial verification by a local processing center 14 of a data terminal transmission follows a routine as shown at 108 in FIG. 6. Thus, at 110 the LPC confirms that the user identification number entered at 84 in FIG. 3 and the terminal number associated with the terminal seeking to place an order are correct or correspond and that suitable credit arrangements have been identified. At 112 the data defining the item being ordered is confirmed as to availability of the service requested and as to the data format and at 114 an appropriate message is composed to be returned to the data terminal at 116. The LPC computer then processes the order at 118 if the initial verifications were properly made."
+        },
+        {
+          "id": "US4734858A-p6",
+          "text": "The processing step 118 depends upon the nature of the goods or services being requested. If this is an order for merchandise, the local processor center first appends additional information available in its storage medium. Thus the user identification number is used to retrieve information such as the full name of the user, the address, and credit information. The terminal number may be used to verify authorization of the service being requested as well as confirm for security reasons that the user identification number conforms with the terminal number."
+        }
+      ]
+    },
+    {
+      "id": "US5715314A",
+      "number": "US 5,715,314",
+      "title": "Network sales system",
+      "assignee": "Open Market, Inc.",
+      "filed": "1994-10-24",
+      "granted": "1998-02-03",
+      "url": "https://patents.google.com/patent/US5715314A/en",
+      "passages": [
+        {
+          "id": "US5715314A-p1",
+          "text": "With reference to FIG. 2, a purchase transaction begins when a user at buyer computer 12 requests advertisements (step 24) and buyer computer 12 accordingly sends an advertising document URL (universal resource locator) to merchant computer 14 (step 26). The merchant computer fetches an advertising document from the advertising document database (step 28) and sends it to the buyer computer (step 30). An example of an advertising document is shown in FIG. 5. Details of URLs and how they are used are found in the microfiche Appendix G."
+        },
+        {
+          "id": "US5715314A-p2",
+          "text": "The user browses through the advertising document and eventually requests a product (step 32). This results in the buyer computer sending payment URL A to the payment computer (step 34). Payment URL A includes a product identifier that represents the product the user wishes to buy, a domain identifier that represents a domain of products to which the desired product belongs, a payment amount that represents the price of the product, a merchant computer identifier that represents merchant computer 14, a merchant account identifier that represents the particular merchant account to be credited with the payment amount, a duration time that represents the length of time for which access to the product is to be granted to the user after completion of the purchase transaction, an expiration time that represents a deadline beyond which this particular payment URL cannot be used, a buyer network address, and a payment URL authenticator that is a digital signature based on a cryptographic key. The payment URL authenticator is a hash of other information in the payment URL, the hash being defined by a key shared by the merchant and the operator of the payment computer."
+        },
+        {
+          "id": "US5715314A-p3",
+          "text": "If the user clicks on the \"continue\" button (step 60), the buyer computer sends payment URL B to the payment computer (step 62), payment URL B being similar to payment URL A but also indicating that the user already has an account. The payment computer then instructs the buyer computer to provide the account name and password ( steps 64 and 66), and the buyer computer prompts the user for this information by creating an account name prompt (example shown in FIG. 8) and a similar password prompt. The user enters the information (step 68) and the buyer computer sends the account name and password to the payment computer (step 70)."
+        },
+        {
+          "id": "US5715314A-p4",
+          "text": "Otherwise, the merchant computer verifies whether the duration time for access to the product has expired (step 98). This is done because the buyer computer can request access to a purchased product repeatedly. If the duration time has expired, the merchant computer sends a document to the buyer computer indicating that the time has expired (step 100). Otherwise the merchant computer verifies that the buyer computer network address is the same as the buyer network address in the access URL (step 101), and if so, sends a fulfillment document to the buyer computer (step 102), which is displayed by the buyer computer (step 104). An example of a fulfillment document is shown in FIG. 10. Otherwise, the merchant computer sends a document to the buyer computer indicating that access is not allowed (step 103)."
+        },
+        {
+          "id": "US5715314A-p5",
+          "text": "With reference now to FIG. 3, when the merchant computer sends the advertising document to the buyer computer, the user may request that a product be added to a shopping cart in the shopping cart database rather than request that the product be purchased immediately. The buyer computer sends a shopping cart URL to the payment computer (step 108), the shopping cart URL including a product identifier, a domain identifier, a payment amount, a merchant computer identifier, a merchant account identifier, a duration time, an expiration time, and a shopping cart URL authenticator that is a digital signature based on a cryptographic key. The shopping cart URL authenticator is a hash of other information in the shopping cart URL, the hash being defined by a key shared by the merchant and the operator of the payment computer."
+        },
+        {
+          "id": "US5715314A-p6",
+          "text": "The user then either requests more advertisements ( step 24 in FIG. 2) and possibly adds another product to the shopping cart, requests display of the shopping cart (step 116), or requests purchase of the entire contents of the shopping cart (step 124). If the user requests display of the shopping cart (step 116), the buyer computer sends a fetch shopping cart request to the payment computer (step 118), and the payment computer and buyer computer (step 119) perform steps analogous to steps 64-81. The payment computer returns the contents of the shopping cart to the buyer computer (step 120), which displays the contents of the shopping cart (step 122). If the user requests that the entire contents of the shopping cart be purchased (step 124) the buyer computer causes the payment URL for the shopping cart to be activated (step 126) and the payment URL is processed in a manner analogous to the processing of payment URLs for individual products (beginning with step 36 in FIG. 2)."
+        }
+      ]
+    },
+    {
+      "id": "US5745681A",
+      "number": "US 5,745,681",
+      "title": "Stateless shopping cart for the web",
+      "assignee": "Sun Microsystems, Inc.",
+      "filed": "1996-01-11",
+      "granted": "1998-04-28",
+      "url": "https://patents.google.com/patent/US5745681A/en",
+      "passages": [
+        {
+          "id": "US5745681A-p1",
+          "text": "Typical database or file-based shopping cart systems require that the user be uniquely identified in order to associate particular data stored on the server with a particular user. This requires the user to log-in or create an account, which is then stored in the server. Each subsequent request from the user must reference the unique identifier, either in the uniform resource locator (URL) or as hidden data passed back through a form submission. Either of these approaches require that the account or ID information of the user be stored on the remote server in the network for some definite period of time. Usually, the user must keep track of the account identifier in order that the prior session information can be retrieved."
+        },
+        {
+          "id": "US5745681A-p2",
+          "text": "In accordance with this invention, the above problems of prior shopping cart operations on networks, such as the Internet, have been solved by providing a stateless shopping cart operation at the server. In the stateless shopping cart operation, the server does not maintain a list of selected items for the shopping cart. Rather in each client transaction at the server, the server updates a data field identifying the contents of the shopping cart and sends the updated version of the shopping cart as a data field back to the client."
+        },
+        {
+          "id": "US5745681A-p3",
+          "text": "In FIG. 2A, the shopping cart operation begins with a user using the browser at a client station to send a request for the HTML (Hyper Text Markup Language) shopping page to the server containing the market program. The request contains the address of the server and of the market program file at the server. In Internet protocol, this referred to as the uniform resource locator (URL). The user at the client station using the web browser program will enter in the URL space the desired locator string."
+        },
+        {
+          "id": "US5745681A-p4",
+          "text": "As shown in FIG. 4, the newly requested shopping page built from the current shopping page file includes a scrollable alphabetical listing 62 of disk device drivers. From this scrollable list, the user may select a disk device driver for his shopping cart. The user may select one or more items from the scrollable window 62. After making a selection the user adds the selected items to his shopping cart by selecting add icon 64. Alternatively, the user may view another page with additional information on the selected drivers by selecting view information icon 65. If the user's request is not an add request, decision operation 161 returns the process to the browser program to detect other user commands. If the user selects the add icon, decision operation 161 branches \"Yes\" to operation 162. Operation 162 then reads the user selected items on the shopping page, and operation 164 in the browser generates an add request. The add request is a data string including (1) an identification of the market program from which the user is selecting items, (2) a cart field in the shopping page file, if any, and (3) values identifying items just selected by the user which the user wishes to add to its HTML shopping cart, i.e. the cart field."
+        },
+        {
+          "id": "US5745681A-p5",
+          "text": "In FIG. 2C at operation 178, the server adds selected items just received in the current add request to the cart list produced either at operation 174 or operation 176. Since in our example this is the first collection of selected items in an add request, the cart list will come from operation 174. With the cart list updated to contain the currently selected items in the add request, convert-to-field module 180 converts the cart list at the server to a cart field data string. Operation 182 then generates the HTML shopping page file and inserts the cart field string into that file as a hidden field. Operation 184 sends this HTML shopping page file containing the hidden cart field to the browser. After the HTML shopping page file is sent, there is no need to maintain the cart list at the server. Therefore operation 184 releases the \"cart\" list temporary storage, and the market program exits."
+        },
+        {
+          "id": "US5745681A-p6",
+          "text": "Assuming that the user has shopped enough and wishes to review or download the selected collection of drivers, the user would select the icon 67, \"Review or download my collection\". In this instance, the process would branch yes at decision operation 202 to send review request operation 203 in FIG. 2D. This review request includes the \"cart\" field containing the list of selected items by the user and the market program identifier."
+        }
+      ]
+    }
+  ]
+}
