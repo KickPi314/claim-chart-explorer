@@ -1,5 +1,7 @@
 # Claim Chart Explorer
 
+**Live demo: [claimchartexplorer.vercel.app](https://claimchartexplorer.vercel.app)**
+
 An interactive claim chart for patent review. A patent claim is split into its elements, and each element is scored against passages from prior-art patents. The chart is shaded by how strongly the prior art covers each element, so a reviewer can spot an **uncovered element** (the start of a novelty argument) in seconds instead of reading every reference end to end.
 
 Built with **Next.js 16 (App Router), React 19, TypeScript and Tailwind CSS**. The matching is a hand-written TF-IDF + cosine similarity engine in TypeScript, served from a Next.js API route. No external AI API is used.
@@ -134,6 +136,8 @@ npm run build      # production build
 1. Push this repo to GitHub.
 2. On [vercel.com/new](https://vercel.com/new), import the repo. Vercel detects Next.js and needs no configuration.
 3. Deploy. Every push to `main` then redeploys automatically.
+
+This project is deployed at [claimchartexplorer.vercel.app](https://claimchartexplorer.vercel.app). Deployment-specific URLs (the ones with a random suffix) are behind Vercel Authentication by default; share the production domain instead.
 
 ## Disclaimer
 
