@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { MatchResponse } from "@/lib/types";
 import { ChartTable, type CellRef } from "./ChartTable";
 import { ClaimText } from "./ClaimText";
+import { IntroHint } from "./IntroHint";
 import { PassagePanel } from "./PassagePanel";
 import { PatentFigure } from "./PatentFigure";
 import { SummaryBar } from "./SummaryBar";
@@ -107,6 +108,7 @@ export function ClaimChartExplorer({ endpoint = "/api/match" }: { endpoint?: str
 
   return (
     <div className="flex flex-col gap-12">
+      <IntroHint />
       <div className="grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,4fr)] lg:gap-14">
         <section aria-labelledby="claim-heading">
           <h2 id="claim-heading" className="text-base font-semibold">

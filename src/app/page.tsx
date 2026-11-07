@@ -66,11 +66,11 @@ export default function Home() {
       <main className="mx-auto flex w-full max-w-[1280px] flex-1 flex-col gap-10 px-4 py-10 sm:px-6">
         <div className="max-w-3xl">
           <h1 className="text-[26px] font-semibold leading-tight tracking-[-0.01em] sm:text-[30px]">
-            {patent.title}
+            How original was Amazon&rsquo;s 1-Click patent?
           </h1>
           <p className="mt-2 text-[15px] text-muted">
-            {patent.number}, filed {filed} by {patent.assignee} Compared against {priorArt.length} earlier
-            patents cited on its face.
+            Each step of the patent&rsquo;s main claim, compared against {priorArt.length} earlier patents it
+            cites. {patent.number}, &ldquo;{patent.title}&rdquo;, filed {filed} by {patent.assignee}
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { render, screen, within } from "@testing-library/react";
+import { act, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import data from "@/data/claimChart.json";
 import { ClaimChartExplorer } from "@/components/ClaimChartExplorer";
@@ -97,6 +97,22 @@ describe("<ClaimChartExplorer />", () => {
     mockFetch({ ok: true, json: async () => chart });
     await user.click(screen.getByRole("button", { name: "Retry" }));
     expect(await screen.findByRole("grid")).toBeInTheDocument();
+  });
+
+  it("shows a hint when the chart loads, then removes it after the fade", async () => {
+    jest.useFakeTimers();
+    try {
+      mockFetch({ ok: true, json: async () => chart });
+      render(<ClaimChartExplorer />);
+
+      expect(await screen.findByText(/Click any of the highlighted elements/)).toBeInTheDocument();
+      act(() => jest.advanceTimersByTime(1500));
+      expect(screen.getByText(/Click any of the highlighted elements/)).toBeInTheDocument();
+      act(() => jest.advanceTimersByTime(500));
+      expect(screen.queryByText(/Click any of the highlighted elements/)).not.toBeInTheDocument();
+    } finally {
+      jest.useRealTimers();
+    }
   });
 
   it("shows an empty state when there is nothing to chart", async () => {
